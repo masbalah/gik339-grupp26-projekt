@@ -1,0 +1,22 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    transition: transform 0.2s; /* Gör att korten "lyfter" lite när man hovrar */
+    border-radius: 12px;
+    background-color: rgb(248, 211, 232);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+
+

@@ -8,7 +8,13 @@ async function fetchBooks() {
 
     books.forEach(book => {
         // En egenskap (genre) styr färgen (Krav från instruktioner)
-        const badgeColor = book.genre === 'Fantasy' ? 'bg-warning text-dark' : 'bg-primary';
+        const genreColors = {
+            'Fantasy': 'bg-success',      // grön
+            'Deckare': 'bg-dark',       // mörk
+            'Roman': 'bg-danger',        // röd
+            'Facklitteratur': 'bg-primary' // blå
+        };
+        const badgeColor = genreColors[book.genre] || 'bg-secondary';
 
         const div = document.createElement('div');
         div.className = "col-md-6 mb-3";
