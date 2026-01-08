@@ -7,7 +7,7 @@ async function fetchBooks() {
     resourceList.innerHTML = ''; 
 
     books.forEach(book => {
-        // En egenskap (genre) styr färgen (Krav från instruktioner)
+        // En egenskap (genre) styr färgen 
         const genreColors = {
             'Fantasy': 'bg-success',      // grön
             'Deckare': 'bg-dark',       // mörk

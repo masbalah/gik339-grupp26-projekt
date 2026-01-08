@@ -9,7 +9,7 @@ app.use(express.static('.'));
 
 const db = new sqlite3.Database('./database.db');
 
-// Skapa tabellen enligt kravspecifikationen (id är AUTOINCREMENT)
+// Skapar tabell
 db.run(`CREATE TABLE IF NOT EXISTS books (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,
